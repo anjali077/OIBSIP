@@ -32,9 +32,9 @@ class ATM_Interface {
 
         if (inputHolderName.equals(holderName)) {
             System.out.print("\nEnter Your PIN: ");
-            String inputPIN = scanner.nextLine();
+            int inputPIN = scanner.nextInt();
 
-            if (inputPIN.equals(PIN)) {
+            if (inputPIN==PIN) {
                 System.out.println("\nLogin Successful!");
                 isLoggedIn = true;
             } else {
